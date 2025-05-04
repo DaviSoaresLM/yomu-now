@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import br.edu.unichristus.yomunow.activities.MangaDetailActivity;
+
 public class Lancamentos extends AppCompatActivity {
 
     ImageButton iBtChainsaw;
@@ -31,7 +33,7 @@ public class Lancamentos extends AppCompatActivity {
         iBtChainsaw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentChainsaw = new Intent(Lancamentos.this, MangaActivity.class);
+                Intent intentChainsaw = new Intent(Lancamentos.this, MangaDetailActivity.class);
                 intentChainsaw.putExtra("image", R.drawable.chainsaw);
                 intentChainsaw.putExtra("title", "Chainsaw Mang");
                 intentChainsaw.putExtra("description", "\"Denji é um jovem pobre que vira um " +

@@ -49,7 +49,7 @@
         android:layout_marginEnd="16dp"
         android:text="Chainsaw Man"
         android:textAlignment="viewStart"
-        android:textColor="#F2C166"
+        android:textColor="#F22D1B"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

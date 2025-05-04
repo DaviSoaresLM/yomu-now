@@ -9,7 +9,7 @@ import java.util.List;
 @Dao
 public interface MangaDAO {
     @Insert
-    void insertManga(Manga manga);
+    void insertAll(List<Manga> mangas);
 
     @Query("SELECT COUNT(*) FROM Manga")
     int getCount();

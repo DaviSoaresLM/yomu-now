@@ -1,4 +1,4 @@
-package br.edu.unichristus.yomunow;
+package br.edu.unichristus.yomunow.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MangaActivity extends AppCompatActivity {
+import br.edu.unichristus.yomunow.R;
+
+public class MangaDetailActivity extends AppCompatActivity {
     ImageView imageBackground;
 
     ImageView mangaCover;
