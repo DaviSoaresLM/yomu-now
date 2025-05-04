@@ -36,7 +36,7 @@ Juntas, as palavras formam a ideia de **"Ler Agora"**, uma alusão à experiênc
 
 ## Equipe:
 - **Desenvolvedores**:
-  - [DaviSoaresLM](https://github.com/DaviSoaresLM)
   - [ArielDev22](https://github.com/ArielDev22)
+  - [DaviSoaresLM](https://github.com/DaviSoaresLM)
 
 ---
