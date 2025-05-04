@@ -1,8 +1,8 @@
-# Yomunow - App de Mangás
+# Yomu Now - App de Mangás
 
-**Yomunow** é um aplicativo desenvolvido para os fãs de mangás, com o objetivo de proporcionar uma experiência de leitura e visualização de mangás populares, recentes e lançamentos.
+**Yomu Now** é um aplicativo desenvolvido para os fãs de mangás, com o objetivo de proporcionar uma experiência de leitura e visualização de mangás populares, recentes e lançamentos.
 
-O nome **Yomunow** é uma combinação de duas palavras:
+O nome **Yomu Now** é uma combinação de duas palavras:
 - **Yomu** (読む) em japonês significa "ler".
 - **Now** em inglês representa a ideia de algo imediato, presente.
 
@@ -21,7 +21,7 @@ Juntas, as palavras formam a ideia de **"Ler Agora"**, uma alusão à experiênc
 
 ## Futuras Integrações
 
-- **Banco de dados para armazenar e carregar os mangás**: Planejo integrar um banco de dados, como o **Room Database**, para armazenar dados sobre os mangás e carregá-los dinamicamente.
+- **Banco de dados para armazenar e carregar os mangás**: Planejamos integrar um banco de dados para armazenar dados sobre os mangás e carregá-los dinamicamente.
 - **Internacionalização**: Adição de suporte a múltiplos idiomas, para tornar o aplicativo acessível a uma audiência global.
 
 ---
