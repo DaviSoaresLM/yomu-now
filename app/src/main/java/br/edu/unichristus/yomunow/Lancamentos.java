@@ -3,7 +3,6 @@ package br.edu.unichristus.yomunow;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
@@ -32,7 +31,7 @@ public class Lancamentos extends AppCompatActivity {
         iBtChainsaw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentChainsaw = new Intent(Lancamentos.this, DetalhesMangas.class);
+                Intent intentChainsaw = new Intent(Lancamentos.this, MangaActivity.class);
                 intentChainsaw.putExtra("image", R.drawable.chainsaw);
                 intentChainsaw.putExtra("title", "Chainsaw Mang");
                 intentChainsaw.putExtra("description", "\"Denji é um jovem pobre que vira um " +

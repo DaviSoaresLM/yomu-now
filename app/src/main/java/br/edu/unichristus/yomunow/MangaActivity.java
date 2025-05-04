@@ -11,24 +11,29 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class DetalhesMangas extends AppCompatActivity {
+public class MangaActivity extends AppCompatActivity {
+    ImageView imageBackground;
 
-    ImageView imgDetalhe;
-    TextView txtTitulo, txtDescricao;
+    ImageView mangaCover;
+    TextView mangaTitle;
+    TextView mangaSinopse;
+    TextView sinopseText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_detalhes_mangas);
+        setContentView(R.layout.activity_manga_details);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.bgDetalhes), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        imgDetalhe = findViewById(R.id.imgDetalhe);
-        txtTitulo = findViewById(R.id.txtTitulo);
-        txtDescricao = findViewById(R.id.txtDescricao);
+
+        imageBackground = findViewById(R.id.imageBackground);
+        mangaCover = findViewById(R.id.mangaCover);
+        mangaTitle = findViewById(R.id.mangaTitle);
+        mangaSinopse = findViewById(R.id.mangaSinopse);
 
         Intent intent = getIntent();
         int imageRes = intent.getIntExtra("image", 0);
@@ -36,9 +41,8 @@ public class DetalhesMangas extends AppCompatActivity {
         String description = intent.getStringExtra("description");
 
 
-        imgDetalhe.setImageResource(imageRes);
-        txtTitulo.setText(title);
-        txtDescricao.setText(description);
-
+        mangaCover.setImageResource(imageRes);
+        mangaTitle.setText(title);
+        mangaSinopse.setText(description);
     }
 }
