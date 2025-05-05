@@ -7,10 +7,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import br.edu.unichristus.yomunow.InitialApp;
 import br.edu.unichristus.yomunow.R;
 import br.edu.unichristus.yomunow.data.AppDatabase;
 import br.edu.unichristus.yomunow.manga.Manga;
