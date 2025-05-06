@@ -11,9 +11,12 @@ public interface MangaDAO {
     @Insert
     void insertAll(List<Manga> mangas);
 
-    @Query("SELECT COUNT(*) FROM Manga")
-    int getCount();
-
-    @Query("SELECT * FROM Manga")
+    @Query("SELECT * FROM mangas")
     List<Manga> getAllMangas();
+
+    @Query("SELECT * FROM mangas WHERE id = :id")
+    Manga getMangaById(int id);
+
+    @Query("DELETE FROM mangas")
+    void deleteAll();
 }

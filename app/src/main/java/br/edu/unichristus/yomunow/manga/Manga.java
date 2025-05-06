@@ -3,7 +3,7 @@ package br.edu.unichristus.yomunow.manga;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "mangas")
 public class Manga {
     @PrimaryKey(autoGenerate = true)
     private int id;

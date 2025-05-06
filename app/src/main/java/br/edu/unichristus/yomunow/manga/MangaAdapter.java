@@ -48,9 +48,7 @@ public class MangaAdapter extends RecyclerView.Adapter<MangaAdapter.ViewHolder> 
 
         holder.itemView.setOnClickListener(v -> {
             int mangaId = manga.getId();
-            Toast.makeText(context, "Manga ID: " + mangaId, Toast.LENGTH_SHORT).show();
 
-            // Exemplo: abrir tela de detalhes
             Intent intent = new Intent(context, MangaDetailActivity.class);
             intent.putExtra("manga_id", mangaId);
             context.startActivity(intent);
