@@ -39,10 +39,10 @@
                 android:id="@+id/mangaTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="left"
                 android:layout_marginTop="16dp"
-                android:text="Título"
-                android:textColor="#F2C166"
+                android:text="Boruto: Two Blue Vortex"
+                android:textColor="#F2F2F2"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -53,21 +53,22 @@
                 android:layout_marginTop="8dp"
                 android:text="Sinopse"
                 android:textColor="#F2F2F2"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/sinopseText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="Lorem Ipsum is simply dummy text..."
-                android:textColor="#FFF"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp"/>
+                android:textColor="#F2F2F2"
+                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/buttonStartReading"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"

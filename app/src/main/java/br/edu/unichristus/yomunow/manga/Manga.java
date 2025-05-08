@@ -11,15 +11,13 @@ public class Manga {
     private String name;
     private String synopsis;
     private String coverUrl;
-    private String titleHex;
     private String buttonHex;
     private String buttonTextHex;
 
-    public Manga(String name, String synopsis, String coverUrl, String titleHex, String buttonHex, String buttonTextHex) {
+    public Manga(String name, String synopsis, String coverUrl, String buttonHex, String buttonTextHex) {
         this.name = name;
         this.synopsis = synopsis;
         this.coverUrl = coverUrl;
-        this.titleHex = titleHex;
         this.buttonHex = buttonHex;
         this.buttonTextHex = buttonTextHex;
     }
@@ -54,14 +52,6 @@ public class Manga {
 
     public void setCoverUrl(String coverUrl) {
         this.coverUrl = coverUrl;
-    }
-
-    public String getTitleHex() {
-        return titleHex;
-    }
-
-    public void setTitleHex(String titleHex) {
-        this.titleHex = titleHex;
     }
 
     public String getButtonHex() {

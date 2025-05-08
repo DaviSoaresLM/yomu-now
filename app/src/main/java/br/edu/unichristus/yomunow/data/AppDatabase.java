@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase;
 import br.edu.unichristus.yomunow.manga.MangaDAO;
 import br.edu.unichristus.yomunow.manga.Manga;
 
-@Database(entities = Manga.class, version = 3)
+@Database(entities = Manga.class, version = 6)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract MangaDAO mangaDAO();
 }

@@ -1,6 +1,7 @@
 package br.edu.unichristus.yomunow.activities;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,7 @@ import jp.wasabeef.glide.transformations.BlurTransformation;
 public class MangaDetailActivity extends AppCompatActivity {
     private ImageView mangaCover, imageBackground;
     private TextView mangaTitle, synopsisText;
+    private Button buttonStartReading;
     private AppDatabase appDatabase;
 
     @Override
@@ -31,6 +33,7 @@ public class MangaDetailActivity extends AppCompatActivity {
         mangaCover = findViewById(R.id.mangaCover);
         mangaTitle = findViewById(R.id.mangaTitle);
         synopsisText = findViewById(R.id.sinopseText);
+        buttonStartReading = findViewById(R.id.buttonStartReading);
 
         appDatabase = AppDatabaseSingleton.getInstance(getApplicationContext());
 
@@ -48,10 +51,10 @@ public class MangaDetailActivity extends AppCompatActivity {
 
         if (manga != null) {
             mangaTitle.setText(manga.getName());
-            mangaTitle.setTextColor(android.graphics.Color.parseColor(manga.getTitleHex()));
-
             synopsisText.setText(manga.getSynopsis());
-            synopsisText.setTextColor(android.graphics.Color.parseColor(manga.getButtonTextHex()));
+
+            buttonStartReading.setBackgroundColor(android.graphics.Color.parseColor(manga.getButtonHex()));
+            buttonStartReading.setTextColor(android.graphics.Color.parseColor(manga.getButtonTextHex()));
 
             Glide.with(this)
                     .load(manga.getCoverUrl())
@@ -59,7 +62,7 @@ public class MangaDetailActivity extends AppCompatActivity {
 
             Glide.with(this)
                     .load(manga.getCoverUrl())
-                    .transform(new MultiTransformation<>(new CenterCrop(), new BlurTransformation(25, 3)))
+                    .transform(new MultiTransformation<>(new CenterCrop(), new BlurTransformation(15, 3)))
                     .into(imageBackground);
         } else {
             Toast.makeText(this, "Mangá não encontrado!", Toast.LENGTH_SHORT).show();
