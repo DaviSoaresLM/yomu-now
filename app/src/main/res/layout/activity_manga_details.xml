@@ -73,7 +73,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="#E53935"
-                android:text="Iniciar Leitura"
+                android:text="@string/bt_read"
                 android:textColor="#FFF" />
 
         </LinearLayout>

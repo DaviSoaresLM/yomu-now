@@ -1,3 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Yomu Now</string>
+    <string name="bt_read">Start Reading</string>
+
+    <string name="chainsawman_synopsis">Denji, a poor young man, makes a contract with Pochita, the Chainsaw Demon, and becomes a human-demon hybrid with the ability to transform parts of his body into chainsaws.</string>
+
+    <string name="kagurabachi_synopsis">Chihiro Rokuhira, a young man, after a tragic incident, decides to follow in his fathers footsteps and become a katana blacksmith, seeking revenge for his fathers murder and the loss of six enchanted blades.</string>
+
+    <string name="dandadan_synopsis">Momo Ayase, a high school student who believes in ghosts, and Ken Takakura (nicknamed Okarun), who is obsessed with aliens. They decide to prove their beliefs are real and get involved in a supernatural adventure against yōkai and aliens.</string>
+
+    <string name="vagabond_synopsis">Takezo Shinmen, a wild and violent young man, struggles to find his place in a world filled with war and violence. After being severely injured, he adopts the name Miyamoto Musashi and begins a journey to become the greatest swordsman in Japan.</string>
+
+    <string name="hells_paradise_synopsis">Gabimaru, an experienced shinobi, is sentenced to death but is given a chance to earn his freedom by searching for the Elixir of Life on a mysterious island. However, the island is filled with dangerous creatures, and the mission becomes a fight for survival.</string>
+
+    <string name="solo_leveling_synopsis">In a world where hunters battle dangerous monsters, Jinwoo is the weakest of all. After a near-death experience, he gains the ability to level up and becomes one of the most powerful hunters, embarking on a journey to uncover the secrets of the dungeon system.</string>
+
+    <string name="boruto_synopsis">Boruto Uzumaki, the son of Naruto Uzumaki, seeks to follow his own path and prove himself as a ninja. However, he struggles with the expectations placed on him and faces various challenges as he tries to step out of his father’s shadow.</string>
+
+    <string name="vinland_saga_synopsis">Thorfinn, a young warrior, seeks revenge on the man who killed his father, the legendary Viking warrior Thors. As he travels with a band of mercenaries, he becomes embroiled in the violent history of medieval Europe, learning about war, honor, and revenge.</string>
+
+    <string name="berserk_synopsis">Guts, a lone mercenary with a tragic past, fights against demons and human enemies alike in a dark and violent medieval world. With a huge sword and a relentless will to survive, he seeks revenge on Griffith, a former comrade who betrayed him and destroyed his life.</string>
 </resources>

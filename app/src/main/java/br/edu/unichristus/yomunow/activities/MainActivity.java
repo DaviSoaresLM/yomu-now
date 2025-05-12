@@ -42,38 +42,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void insertMangas(MangaDAO mangaDAO) {
-        Manga m1 = new Manga("Chainsaw Man",
-                "Denji, um jovem pobre, faz um contrato com Pochita, o Demônio da Motosserra, e se torna um híbrido humano-demônio com a capacidade de transformar partes do corpo em motosserras.",
+        Manga m1 = new Manga("Chainsaw Man", getString(R.string.chainsawman_synopsis),
                 "https://drive.google.com/uc?export=download&id=19AZQU9fRkeieWd7cy-BS3csHH216kk6M", "#F23838", "#F2F2F2");
-        Manga m2 = new Manga("Kagurabachi",
-                "Chihiro Rokuhira, um jovem que, após um trágico incidente, decide seguir os passos de seu pai e se tornar um ferreiro de katanas, buscando vingança pelo assassinato do pai e pela perda de outras seis lâminas encantadas.",
+        Manga m2 = new Manga("Kagurabachi", getString(R.string.kagurabachi_synopsis),
                 "https://drive.google.com/uc?export=download&id=1CjQTIuGrY25OoA4PSET0PSRJ22hMOoqL", "#F22D1B", "#F2F2F2");
-        Manga m3 = new Manga("Dandadan",
-                "Momo Ayase, uma estudante do ensino médio que acredita em fantasmas, e Ken Takakura (apelidado de Okarun), que é um viciado em alienígenas. Eles decidem provar que suas crenças são reais, e acabam se envolvendo em uma aventura sobrenatural contra yōkai e alienígenas.",
+
+        Manga m3 = new Manga("Dandadan", getString(R.string.dandadan_synopsis),
                 "https://drive.google.com/uc?export=download&id=1cRVjnwBmo8MMPFA-PqtP0tf01pjuBK5A", "#D9043D", "#F2F2F2");
 
-        Manga m4 = new Manga("Vagabond",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        Manga m4 = new Manga("Vagabond", getString(R.string.vagabond_synopsis),
                 "https://drive.google.com/uc?export=download&id=1bO6Ch558hla4rBBS86ng7LwqsEu0QEMF", "#D9A38F", "#0D0D0D");
 
-        Manga m5 = new Manga("Hell’s Paradise: Jigokuraku",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        Manga m5 = new Manga("Hell’s Paradise: Jigokuraku", getString(R.string.hells_paradise_synopsis),
                 "https://drive.google.com/uc?export=download&id=1iIhhA_lSresGye6oLWwQ3ad6pH3Lv6LK", "#0CC8F2", "#0D0D0D");
 
-        Manga m6 = new Manga("Solo Leveling",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        Manga m6 = new Manga("Solo Leveling", getString(R.string.solo_leveling_synopsis),
                 "https://drive.google.com/uc?export=download&id=1RZKR6sh1CO7dZnld0xtx4dTT9laXQiuE", "#88DFF2", "#0D0D0D");
 
-        Manga m7 = new Manga("Boruto: Two Blue Vortex",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        Manga m7 = new Manga("Boruto: Two Blue Vortex", getString(R.string.boruto_synopsis),
                 "https://drive.google.com/uc?export=download&id=12R_Ioak50NRv0q3GuMxesNeQdrJkv-yp", "#04B2D9", "#F2F2F2");
 
-        Manga m8 = new Manga("Vinland Saga",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        Manga m8 = new Manga("Vinland Saga", getString(R.string.vinland_saga_synopsis),
                 "https://drive.google.com/uc?export=download&id=1m_zPbMRDQqLDynW9whgl9gy8-1bUcEXx", "#0388A6", "#F2F2F2");
 
-        Manga m9 = new Manga("Berserk",
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        Manga m9 = new Manga("Berserk", getString(R.string.berserk_synopsis),
                 "https://drive.google.com/uc?export=download&id=1urFZ0MJsIxpGshhnAX4GQTSwtKlWW6fU", "#F2B988", "#0D0D0D");
 
         mangaDAO.insertAll(List.of(m1, m2, m3, m4, m5, m6, m7, m8, m9));
