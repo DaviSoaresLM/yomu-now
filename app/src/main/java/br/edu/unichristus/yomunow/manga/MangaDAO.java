@@ -9,7 +9,10 @@ import java.util.List;
 @Dao
 public interface MangaDAO {
     @Insert
-    void insertAll(List<Manga> mangas);
+    long insert(Manga manga);
+
+    @Insert
+    List<Long> insertAll(List<Manga> mangas);
 
     @Query("SELECT * FROM mangas")
     List<Manga> getAllMangas();

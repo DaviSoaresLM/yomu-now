@@ -13,13 +13,15 @@ public class Manga {
     private String coverUrl;
     private String buttonHex;
     private String buttonTextHex;
+    private String chaptersJsonLink;
 
-    public Manga(String name, String synopsis, String coverUrl, String buttonHex, String buttonTextHex) {
+    public Manga(String name, String synopsis, String coverUrl, String buttonHex, String buttonTextHex, String chaptersJsonLink) {
         this.name = name;
         this.synopsis = synopsis;
         this.coverUrl = coverUrl;
         this.buttonHex = buttonHex;
         this.buttonTextHex = buttonTextHex;
+        this.chaptersJsonLink = chaptersJsonLink;
     }
 
     public int getId() {
@@ -68,5 +70,13 @@ public class Manga {
 
     public void setButtonTextHex(String buttonTextHex) {
         this.buttonTextHex = buttonTextHex;
+    }
+
+    public String getChaptersJsonLink() {
+        return chaptersJsonLink;
+    }
+
+    public void setChaptersJsonLink(String chaptersJsonLink) {
+        this.chaptersJsonLink = chaptersJsonLink;
     }
 }

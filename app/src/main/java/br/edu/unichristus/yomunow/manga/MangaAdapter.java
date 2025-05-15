@@ -20,7 +20,6 @@ import br.edu.unichristus.yomunow.R;
 import br.edu.unichristus.yomunow.activities.MangaDetailActivity;
 
 public class MangaAdapter extends RecyclerView.Adapter<MangaAdapter.ViewHolder> {
-
     private List<Manga> mangaList;
     private Context context;
 
@@ -39,7 +38,6 @@ public class MangaAdapter extends RecyclerView.Adapter<MangaAdapter.ViewHolder> 
     public void onBindViewHolder(ViewHolder holder, int position) {
         Manga manga = mangaList.get(position);
         holder.textNome.setText(manga.getName());
-        //holder.textNome.setTextColor(android.graphics.Color.parseColor(manga.getTitleHex()));
 
         Glide.with(context)
                 .load(manga.getCoverUrl())
@@ -72,7 +70,6 @@ public class MangaAdapter extends RecyclerView.Adapter<MangaAdapter.ViewHolder> 
             itemView.setOnClickListener(v -> {
                 int mangaId = (int) v.getTag();
                 Toast.makeText(context, "Manga ID: " + mangaId, Toast.LENGTH_SHORT).show();
-                // Aqui você pode abrir detalhes, passar para outra Activity, etc.
             });
         }
     }

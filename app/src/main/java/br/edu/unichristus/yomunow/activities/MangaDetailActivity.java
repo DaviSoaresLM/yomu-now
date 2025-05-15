@@ -1,5 +1,6 @@
 package br.edu.unichristus.yomunow.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -40,32 +41,39 @@ public class MangaDetailActivity extends AppCompatActivity {
         int mangaId = getIntent().getIntExtra("manga_id", -1);
 
         if (mangaId != -1) {
-            loadMangaDetails(mangaId);
+            Manga manga = appDatabase.mangaDAO().getMangaById(mangaId);
+
+            buttonStartReading.setOnClickListener(view -> {
+                Intent intent = new Intent(MangaDetailActivity.this, MangaChapterActivity.class);
+
+                intent.putExtra("manga_id", manga.getId());
+                intent.putExtra("manga_title", manga.getName());
+                intent.putExtra("manga_cover", manga.getCoverUrl());
+                intent.putExtra("jsonLink", manga.getChaptersJsonLink());
+
+                startActivity(intent);
+            });
+
+            loadMangaDetails(manga);
         } else {
             Toast.makeText(this, "Erro: Manga ID inválido!", Toast.LENGTH_SHORT).show();
         }
     }
 
-    private void loadMangaDetails(int mangaId) {
-        Manga manga = appDatabase.mangaDAO().getMangaById(mangaId);
+    private void loadMangaDetails(Manga manga) {
+        mangaTitle.setText(manga.getName());
+        synopsisText.setText(manga.getSynopsis());
 
-        if (manga != null) {
-            mangaTitle.setText(manga.getName());
-            synopsisText.setText(manga.getSynopsis());
+        buttonStartReading.setBackgroundColor(android.graphics.Color.parseColor(manga.getButtonHex()));
+        buttonStartReading.setTextColor(android.graphics.Color.parseColor(manga.getButtonTextHex()));
 
-            buttonStartReading.setBackgroundColor(android.graphics.Color.parseColor(manga.getButtonHex()));
-            buttonStartReading.setTextColor(android.graphics.Color.parseColor(manga.getButtonTextHex()));
+        Glide.with(this)
+                .load(manga.getCoverUrl())
+                .into(mangaCover);
 
-            Glide.with(this)
-                    .load(manga.getCoverUrl())
-                    .into(mangaCover);
-
-            Glide.with(this)
-                    .load(manga.getCoverUrl())
-                    .transform(new MultiTransformation<>(new CenterCrop(), new BlurTransformation(15, 3)))
-                    .into(imageBackground);
-        } else {
-            Toast.makeText(this, "Mangá não encontrado!", Toast.LENGTH_SHORT).show();
-        }
+        Glide.with(this)
+                .load(manga.getCoverUrl())
+                .transform(new MultiTransformation<>(new CenterCrop(), new BlurTransformation(15, 3)))
+                .into(imageBackground);
     }
 }
