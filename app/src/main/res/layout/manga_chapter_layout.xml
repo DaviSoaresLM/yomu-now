@@ -6,22 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".activities.MangaChapterActivity">
 
+    <!-- Fundo do leitor -->
     <ImageView
         android:id="@+id/imageBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:clickable="false" />
 
+    <!-- Escurecimento leve no fundo -->
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#CC0D0D0D" />
+        android:background="#CC0D0D0D"
+        android:clickable="false" />
 
     <!-- ViewPager para deslizar páginas -->
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPagerPaginas"
+        android:id="@+id/viewPages"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <!-- Áreas invisíveis para toque (esquerda e direita) -->
+    <LinearLayout
+        android:id="@+id/tapZones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Tap esquerdo (voltar página) -->
+        <View
+            android:id="@+id/leftTap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+
+        <!-- Tap central (mostrar/ocultar menus) -->
+        <View
+            android:id="@+id/centerTap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+
+        <!-- Tap direito (próxima página) -->
+        <View
+            android:id="@+id/rightTap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+    </LinearLayout>
 
     <!-- Menu superior -->
     <LinearLayout
@@ -33,7 +75,7 @@
         android:gravity="start"
         android:orientation="vertical"
         android:padding="12dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <TextView
             android:id="@+id/tituloManga"
@@ -64,9 +106,8 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
-        <!-- Botão voltar página -->
         <ImageButton
             android:id="@+id/btnAnterior"
             android:layout_width="wrap_content"
@@ -75,7 +116,6 @@
             android:src="@android:drawable/ic_media_previous"
             android:tint="#FFFFFF" />
 
-        <!-- Contador de páginas -->
         <TextView
             android:id="@+id/contadorPaginas"
             android:layout_width="wrap_content"
@@ -85,7 +125,6 @@
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
-        <!-- Botão avançar página -->
         <ImageButton
             android:id="@+id/btnProxima"
             android:layout_width="wrap_content"
