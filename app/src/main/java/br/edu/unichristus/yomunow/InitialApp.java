@@ -9,48 +9,89 @@ import br.edu.unichristus.yomunow.data.AppDatabaseSingleton;
 import br.edu.unichristus.yomunow.manga.Manga;
 
 public class InitialApp extends Application {
-    // private static final String DB_NAME = "manga_db";
-    private AppDatabase appDatabase;
+    private final String DRIVEURL = "https://drive.google.com/uc?export=download&id=";
 
     @Override
     public void onCreate() {
         super.onCreate();
 
-        appDatabase = AppDatabaseSingleton.getInstance(getApplicationContext());
+        AppDatabase database = AppDatabaseSingleton.getInstance(getApplicationContext());
 
-        appDatabase.mangaDAO().deleteAll();
+        database.mangaDAO().deleteAll();
 
-        insertMangas(appDatabase);
+        insertMangas(database);
     }
 
     private void insertMangas(AppDatabase database) {
-        Manga m1 = new Manga("Chainsaw Man", getString(R.string.chainsawman_synopsis),
-                "https://drive.google.com/uc?export=download&id=19AZQU9fRkeieWd7cy-BS3csHH216kk6M", "#F23838", "#F2F2F2", null);
-        Manga m2 = new Manga("Kagurabachi", getString(R.string.kagurabachi_synopsis),
-                "https://drive.google.com/uc?export=download&id=1CjQTIuGrY25OoA4PSET0PSRJ22hMOoqL", "#F22D1B", "#F2F2F2", null);
+        // POPULARES
+        Manga m1 = new Manga();
+        Manga m2 = new Manga();
+        Manga m3 = new Manga();
 
-        Manga m3 = new Manga("Dandadan", getString(R.string.dandadan_synopsis),
-                "https://drive.google.com/uc?export=download&id=1cRVjnwBmo8MMPFA-PqtP0tf01pjuBK5A", "#D9043D", "#F2F2F2",
-                "https://drive.google.com/uc?export=download&id=1XKK9aZkFOrWIxnmtsNxvbI_OOs7N8ec-");
+        m1.setTitle("Boruto: Two Blue Vortex");
+        m1.setAuthor("Masashi Kishimoto");
+        m1.setSynopsis(getString(R.string.boruto_synopsis));
+        m1.setCategory("POPULAR");
+        m1.setStatus("ONGOING");
+        m1.setIsReading(0);
+        m1.setCoverUrl(DRIVEURL.concat("1WxKTHsGEX6exnrDDBhvsfvqJMh8xsI1e"));
 
-        Manga m4 = new Manga("Vagabond", getString(R.string.vagabond_synopsis),
-                "https://drive.google.com/uc?export=download&id=1bO6Ch558hla4rBBS86ng7LwqsEu0QEMF", "#D9A38F", "#0D0D0D", null);
+        m2.setTitle("Jujutsu Kaisen");
+        //m2.setSynopsis(getString(R.string.jujutsu_synopsis));
+        m2.setAuthor("Gege Akutami");
+        m2.setCategory("POPULAR");
+        m2.setStatus("COMPLETED");
+        m2.setIsReading(0);
+        m2.setCoverUrl(DRIVEURL.concat("1MH3ZV2sMYGEWYiuS-WGvBBS1jb3lDiXc"));
 
-        Manga m5 = new Manga("Hell’s Paradise: Jigokuraku", getString(R.string.hells_paradise_synopsis),
-                "https://drive.google.com/uc?export=download&id=1iIhhA_lSresGye6oLWwQ3ad6pH3Lv6LK", "#0CC8F2", "#0D0D0D", null);
+        m3.setTitle("Chainsaw Man");
+        m3.setSynopsis(getString(R.string.chainsawman_synopsis));
+        m3.setAuthor("Tatsuki Fujimoto");
+        m3.setCategory("POPULAR");
+        m3.setStatus("ONGOING");
+        m3.setIsReading(0);
+        m3.setCoverUrl(DRIVEURL.concat("1RWs6kFKRbJIhuydXLRHKaRHbsL0JivHd"));
 
-        Manga m6 = new Manga("Solo Leveling", getString(R.string.solo_leveling_synopsis),
-                "https://drive.google.com/uc?export=download&id=1RZKR6sh1CO7dZnld0xtx4dTT9laXQiuE", "#88DFF2", "#0D0D0D", null);
+        Manga m4 = new Manga();
+        Manga m5 = new Manga();
 
-        Manga m7 = new Manga("Boruto: Two Blue Vortex", getString(R.string.boruto_synopsis),
-                "https://drive.google.com/uc?export=download&id=12R_Ioak50NRv0q3GuMxesNeQdrJkv-yp", "#04B2D9", "#F2F2F2", null);
+        m4.setTitle("Dandadan");
+        m4.setAuthor("Yukinobu Tatsu");
+        m4.setSynopsis(getString(R.string.dandadan_synopsis));
+        m4.setStatus("ONGOING");
+        m4.setCategory("POPULAR");
+        m4.setIsReading(1);
+        m4.setCoverUrl(DRIVEURL.concat("19M4Ay3nYH6QSLX_mVesAsAzA2I58yv-U"));
+        m4.setBannerUrl(DRIVEURL.concat("1bb1M978jY6FLcc6uw2zKvKjY0sfn9_qB"));
+        m4.setChaptersJsonLink(DRIVEURL.concat("1XKK9aZkFOrWIxnmtsNxvbI_OOs7N8ec-"));
+        m5.setTitle("Kagurabachi");
+        m5.setAuthor("Takeru Hokazono");
+        m5.setSynopsis(getString(R.string.kagurabachi_synopsis));
+        m5.setStatus("ONGOING");
+        m5.setCategory("UPDATING");
+        m5.setIsReading(1);
+        m5.setCoverUrl(DRIVEURL.concat("1lG7bcRFA-1ZhAAAqH2xmYa750BwGHfi1"));
+        m5.setBannerUrl(DRIVEURL.concat("1PrG1xKtnrTeMIriKqwVDn4j6bM4zc4AC"));
 
-        Manga m8 = new Manga("Vinland Saga", getString(R.string.vinland_saga_synopsis),
-                "https://drive.google.com/uc?export=download&id=1m_zPbMRDQqLDynW9whgl9gy8-1bUcEXx", "#0388A6", "#F2F2F2", null);
+        Manga m6 = new Manga();
+        Manga m7 = new Manga();
 
-        Manga m9 = new Manga("Berserk", getString(R.string.berserk_synopsis),
-                "https://drive.google.com/uc?export=download&id=1urFZ0MJsIxpGshhnAX4GQTSwtKlWW6fU", "#F2B988", "#0D0D0D", null);
+        m6.setTitle("Sakamoto Days");
+        m6.setAuthor("Yuto Suzuki");
+        ///m6.setSynopsis(getString(R.string.dandadan_synopsis));
+        m6.setStatus("ONGOING");
+        m6.setCategory("UPDATING");
+        m6.setIsReading(0);
+        m6.setCoverUrl(DRIVEURL.concat("1GX_s5BOhYpKUcq2O3G-wqfwSBenIzmC-"));
 
-        database.mangaDAO().insertAll(List.of(m1, m2, m3, m4, m5, m6, m7, m8, m9));
+        m7.setTitle("Spy X Family");
+        m7.setAuthor("Tatsuya Endo");
+        ///m7.setSynopsis(getString(R.string.dandadan_synopsis));
+        m7.setStatus("ONGOING");
+        m7.setCategory("UPDATING");
+        m7.setIsReading(0);
+        m7.setCoverUrl(DRIVEURL.concat("1ytlJcSWPJ9k4hJjYf6jvN016HY43Q68K"));
+
+        database.mangaDAO().insertAll(List.of(m1, m2, m3, m4, m5, m6, m7));
     }
 }

@@ -2,9 +2,11 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLeitura"
+    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MangaChapterActivity">
+    tools:context=".activities.MangaChapterActivity"
+    android:background="#121212">
 
     <!-- Fundo do leitor -->
     <ImageView
@@ -19,7 +21,7 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#CC0D0D0D"
+        android:background="#CC1E1E1E"
         android:clickable="false" />
 
     <!-- ViewPager para deslizar páginas -->
@@ -71,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:background="#CC000000"
+        android:background="#CC1E1E1E"
         android:gravity="start"
         android:orientation="vertical"
         android:padding="12dp"
@@ -81,6 +83,7 @@
             android:id="@+id/tituloManga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
             android:text="Dandadan"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
@@ -91,8 +94,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:fontFamily="@font/inter"
             android:text="É Assim Que o Amor Começa, Sabia?!"
-            android:textColor="#CCCCCC"
+            android:textColor="#FFFFFF"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -102,7 +106,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="#CC000000"
+        android:background="#CC1E1E1E"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="8dp"

@@ -8,20 +8,27 @@ public class Manga {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    private String name;
+    private String title;
+    private String author;
     private String synopsis;
+    private String status;
+    private String category;
+    private int isReading;
     private String coverUrl;
-    private String buttonHex;
-    private String buttonTextHex;
+    private String bannerUrl;
     private String chaptersJsonLink;
 
-    public Manga(String name, String synopsis, String coverUrl, String buttonHex, String buttonTextHex, String chaptersJsonLink) {
-        this.name = name;
+    public Manga() {
+    }
+
+    public Manga(String title, String author, String synopsis, String status, String category, int isReading, String coverUrl) {
+        this.title = title;
+        this.author = author;
         this.synopsis = synopsis;
+        this.status = MangaStatus.fromString(status);
+        this.category = MangaCategory.fromString(category);
+        this.isReading = isReading;
         this.coverUrl = coverUrl;
-        this.buttonHex = buttonHex;
-        this.buttonTextHex = buttonTextHex;
-        this.chaptersJsonLink = chaptersJsonLink;
     }
 
     public int getId() {
@@ -32,12 +39,20 @@ public class Manga {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public String getSynopsis() {
@@ -48,6 +63,30 @@ public class Manga {
         this.synopsis = synopsis;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public int getIsReading() {
+        return isReading;
+    }
+
+    public void setIsReading(int isReading) {
+        this.isReading = isReading;
+    }
+
     public String getCoverUrl() {
         return coverUrl;
     }
@@ -56,20 +95,12 @@ public class Manga {
         this.coverUrl = coverUrl;
     }
 
-    public String getButtonHex() {
-        return buttonHex;
+    public String getBannerUrl() {
+        return bannerUrl;
     }
 
-    public void setButtonHex(String buttonHex) {
-        this.buttonHex = buttonHex;
-    }
-
-    public String getButtonTextHex() {
-        return buttonTextHex;
-    }
-
-    public void setButtonTextHex(String buttonTextHex) {
-        this.buttonTextHex = buttonTextHex;
+    public void setBannerUrl(String bannerUrl) {
+        this.bannerUrl = bannerUrl;
     }
 
     public String getChaptersJsonLink() {
