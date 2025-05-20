@@ -32,7 +32,7 @@
             android:id="@+id/txtCapitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Capítulo 20 de 100"
+            android:text="@string/desc_num_chap"
             android:textColor="@android:color/darker_gray"
             android:textSize="12sp"
             android:paddingTop="4dp"/>
@@ -50,7 +50,7 @@
             android:id="@+id/btnContinuar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Continuar"
+            android:text="@string/bt_continue"
             android:textSize="12sp"
             android:layout_marginTop="4dp"/>
     </LinearLayout>

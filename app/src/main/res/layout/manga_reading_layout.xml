@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Dandadan"
+                android:text="@string/dandadan"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter"
-                android:text="É Assim Que o Amor Começa, Sabia?!"
+                android:text="@string/assim_que_o_amor_come_a_sabia"
                 android:textColor="#B3B3B3"
                 android:textSize="14sp"
                 app:lineHeight="16dp" />

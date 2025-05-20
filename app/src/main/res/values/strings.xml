@@ -1,23 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
     <string name="app_name">Yomu Now</string>
-    <string name="bt_read">Start Reading</string>
+    <string name="bt_read">Iniciar Leitura</string>
+    <string name="bt_continue">Continuar</string>
+    <string name="manga_details">Detalhes do Mangá</string>
+    <string name="descricao">Descrição</string>
+    <string name="processo_manga">Em andamento</string>
+    <string name="continue_reading">Continuar Lendo</string>
+    <string name="next_chapter">Próximo Capítulo</string>
+    <string name="data_chapter">quarta-feira, 28 de maio</string>
+    <string name="dandadan_cap_name">Capítulo 170 - Uma Mulher Suspeita</string>
+    <string name="popular">Populares</string>
+    <string name="lb_continue_lendo">Continue Lendo</string>
+    <string name="mostrar_tudo">Mostrar Tudo</string>
+    <string name="atualizacoes">Atualizações</string>
+    <string name="bt_home">Início</string>
+    <string name="bt_biblioteca">Biblioteca</string>
+    <string name="bt_perfil">Perfil</string>
+    <string name="ht_procurar_obra">Procurar Obra</string>
+    <string name="desc_num_chap">Capítulo 20 de 100</string>
 
-    <string name="chainsawman_synopsis">Denji, a poor young man, makes a contract with Pochita, the Chainsaw Demon, and becomes a human-demon hybrid with the ability to transform parts of his body into chainsaws.</string>
 
-    <string name="kagurabachi_synopsis">Chihiro Rokuhira, a young man, after a tragic incident, decides to follow in his fathers footsteps and become a katana blacksmith, seeking revenge for his fathers murder and the loss of six enchanted blades.</string>
 
-    <string name="dandadan_synopsis">Momo Ayase, a high school student who believes in ghosts, and Ken Takakura (nicknamed Okarun), who is obsessed with aliens. They decide to prove their beliefs are real and get involved in a supernatural adventure against yōkai and aliens.</string>
 
-    <string name="vagabond_synopsis">Takezo Shinmen, a wild and violent young man, struggles to find his place in a world filled with war and violence. After being severely injured, he adopts the name Miyamoto Musashi and begins a journey to become the greatest swordsman in Japan.</string>
 
-    <string name="hells_paradise_synopsis">Gabimaru, an experienced shinobi, is sentenced to death but is given a chance to earn his freedom by searching for the Elixir of Life on a mysterious island. However, the island is filled with dangerous creatures, and the mission becomes a fight for survival.</string>
+    <string name="chainsawman_synopsis">Denji é um jovem endividado que trabalha como caçador de demônios, em parceria com seu demônio de estimação, Pochita. Após ser traído e morto por seu chefe, Denji é revivido como um híbrido entre homem e demônio, com uma motosserra saindo de sua cabeça. Ele busca uma vida melhor enquanto enfrenta inimigos e tenta controlar seus novos poderes.</string>
 
-    <string name="solo_leveling_synopsis">In a world where hunters battle dangerous monsters, Jinwoo is the weakest of all. After a near-death experience, he gains the ability to level up and becomes one of the most powerful hunters, embarking on a journey to uncover the secrets of the dungeon system.</string>
+    <string name="kagurabachi_synopsis">Em um Japão fictício, um jovem chamado Chihiro busca vingança pela morte de seu pai, um mestre forjador. Para isso, ele deve encontrar e usar uma espada especial chamada Kagurabachi, uma espada lendária capaz de enfrentar os mais poderosos guerreiros. A trama é cheia de mistérios e desafios, enquanto Chihiro busca entender seu verdadeiro destino.</string>
 
-    <string name="boruto_synopsis">Boruto Uzumaki, the son of Naruto Uzumaki, seeks to follow his own path and prove himself as a ninja. However, he struggles with the expectations placed on him and faces various challenges as he tries to step out of his father’s shadow.</string>
+    <string name="dandadan_synopsis">Momo Ayase, uma estudante do ensino médio que acredita em fantasmas, e Ken Takakura (apelidado de Okarun), que é viciado em alienígenas, decidem provar que suas crenças são reais. Juntos, eles embarcam em uma aventura sobrenatural contra yōkai e alienígenas, enfrentando situações perigosas e desafiadoras.</string>
 
-    <string name="vinland_saga_synopsis">Thorfinn, a young warrior, seeks revenge on the man who killed his father, the legendary Viking warrior Thors. As he travels with a band of mercenaries, he becomes embroiled in the violent history of medieval Europe, learning about war, honor, and revenge.</string>
+    <string name="vagabond_synopsis">Vagabond é uma adaptação do clássico romance japonês "Musashi", de Eiji Yoshikawa. A história segue o lendário samurai Miyamoto Musashi, desde sua juventude até sua jornada para se tornar um mestre na arte da espada. A trama explora temas como honra, lealdade e o sentido da vida enquanto Musashi enfrenta inimigos e tenta entender seu próprio destino.</string>
 
-    <string name="berserk_synopsis">Guts, a lone mercenary with a tragic past, fights against demons and human enemies alike in a dark and violent medieval world. With a huge sword and a relentless will to survive, he seeks revenge on Griffith, a former comrade who betrayed him and destroyed his life.</string>
+    <string name="hells_paradise_synopsis">Jigokuroku (Hell’s Paradise) segue Gabimaru, um ninja que, após ser condenado à morte, é enviado a uma misteriosa ilha para buscar a elixir da imortalidade. Lá, ele e outros criminosos enfrentam monstros e mistérios enquanto tentam sobreviver e encontrar a verdade sobre o que está acontecendo na ilha. Uma história cheia de ação e mistério.</string>
+
+    <string name="solo_leveling_synopsis">Em um mundo onde caçadores lutam contra monstros em masmorras, o caçador mais fraco, Jinwoo, é um "caçador normal" sem habilidades especiais. No entanto, após um encontro fatídico em uma masmorra mortal, ele ganha a habilidade de "nivelar" e se tornar mais forte. A história segue sua jornada para se tornar o caçador mais poderoso e desbravar os mistérios por trás do sistema de masmorras.</string>
+
+    <string name="boruto_synopsis">Boruto Uzumaki, filho de Naruto Uzumaki, vive em um mundo onde a paz foi alcançada entre as nações shinobi. No entanto, ele sente que vive à sombra de seu pai, que se tornou o Hokage. Junto com seus amigos, Boruto começa a trilhar seu próprio caminho como ninja, enfrentando novos desafios e descobrindo os mistérios que ameaçam o mundo.</string>
+
+    <string name="vinland_saga_synopsis">Vinland Saga segue a vida de Thorfinn, um jovem guerreiro viking que busca vingança pela morte de seu pai, mas acaba se vendo envolvido em uma luta pelo poder e pela sobrevivência durante a invasão da Inglaterra pelos vikings. Uma história épica sobre honra, guerra e a busca pelo destino, baseada na história real dos vikings e da cultura nórdica.</string>
+
+    <string name="berserk_synopsis">Berserk segue Guts, um guerreiro solitário marcado por uma vida de sofrimento e violência. Após ser marcado por uma maldição, ele se vê caçado por demônios e forças sobrenaturais. Ao longo de sua jornada, Guts busca vingança contra aqueles que o traíram e tenta encontrar um propósito em um mundo implacável e cruel, enquanto lida com suas próprias questões existenciais.</string>
+    <string name="dandadan">Dandadan</string>
+    <string name="assim_que_o_amor_come_a_sabia">É Assim Que o Amor Começa, Sabia?!</string>
+
+
 </resources>

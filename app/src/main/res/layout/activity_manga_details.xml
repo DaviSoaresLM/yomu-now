@@ -59,7 +59,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="72dp"
                             android:layout_marginEnd="72dp"
-                            android:text="Detalhes do Mangá"
+                            android:text="@string/manga_details"
                             android:textColor="@android:color/white"
                             android:textSize="18sp"
                             android:textStyle="bold"
@@ -155,7 +155,7 @@
                         android:layout_height="22dp"
                         android:layout_width="match_parent"
                         android:layout_weight="1"
-                        android:text="Capítulo 170 - Uma Mulher Suspeita"
+                        android:text="@string/dandadan_cap_name"
                         />
                     <LinearLayout
                         android:id="@+id/rb9ogfqcupq8"
@@ -219,7 +219,7 @@
                             android:textStyle="bold"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
-                            android:text="Em andamento"
+                            android:text="@string/processo_manga"
                             />
                     </LinearLayout>
                     <LinearLayout
@@ -239,7 +239,7 @@
                             android:layout_marginEnd="4dp"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
-                            android:text="PRÓXIMO CAPÍTULO:"
+                            android:text="@string/next_chapter"
                             />
                         <TextView
                             android:id="@+id/rnm36fwencgm"
@@ -248,7 +248,7 @@
                             android:layout_marginBottom="1dp"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
-                            android:text="quarta-feira, 28 de maio"
+                            android:text="@string/data_chapter"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -274,7 +274,7 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:layout_weight="1"
-                            android:text="Descrição"
+                            android:text="@string/descricao"
                             />
                     </LinearLayout>
                     <TextView
@@ -311,7 +311,7 @@
                     android:textStyle="bold"
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
-                    android:text="Continuar lendo"
+                    android:text="@string/continue_reading"
                     />
             </LinearLayout>
         </LinearLayout>

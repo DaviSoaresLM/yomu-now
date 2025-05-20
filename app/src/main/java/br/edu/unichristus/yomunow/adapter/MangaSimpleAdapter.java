@@ -17,7 +17,7 @@ import br.edu.unichristus.yomunow.R;
 import br.edu.unichristus.yomunow.manga.Manga;
 import br.edu.unichristus.yomunow.utils.OnMangaClickListener;
 
-public class MangaSimpleAdapter extends RecyclerView.Adapter<MangaSimpleAdapter.MangaViewHolder> {
+public class  MangaSimpleAdapter extends RecyclerView.Adapter<MangaSimpleAdapter.MangaViewHolder> {
     private List<Manga> mangaList;
     private OnMangaClickListener listener;
 
