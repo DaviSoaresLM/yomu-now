@@ -1,0 +1,6 @@
+<!-- res/drawable/progress_cursor_circle.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <size android:width="8dp" android:height="8dp" />
+    <solid android:color="#B3B3B3" />
+</shape>

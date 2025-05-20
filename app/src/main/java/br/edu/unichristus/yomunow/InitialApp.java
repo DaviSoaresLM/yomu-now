@@ -35,6 +35,7 @@ public class InitialApp extends Application {
         m1.setStatus("ONGOING");
         m1.setIsReading(0);
         m1.setCoverUrl(DRIVEURL.concat("1WxKTHsGEX6exnrDDBhvsfvqJMh8xsI1e"));
+        m1.setBannerUrl(DRIVEURL.concat("1oMerewjylogqPyNmQWA-LklRxAUnqRyj"));
 
         m2.setTitle("Jujutsu Kaisen");
         //m2.setSynopsis(getString(R.string.jujutsu_synopsis));
@@ -43,6 +44,7 @@ public class InitialApp extends Application {
         m2.setStatus("COMPLETED");
         m2.setIsReading(0);
         m2.setCoverUrl(DRIVEURL.concat("1MH3ZV2sMYGEWYiuS-WGvBBS1jb3lDiXc"));
+        m2.setBannerUrl(DRIVEURL.concat("1g6wx75wzGbjF9mgS-nVck2jb9NqQbFDs"));
 
         m3.setTitle("Chainsaw Man");
         m3.setSynopsis(getString(R.string.chainsawman_synopsis));
@@ -51,6 +53,7 @@ public class InitialApp extends Application {
         m3.setStatus("ONGOING");
         m3.setIsReading(0);
         m3.setCoverUrl(DRIVEURL.concat("1RWs6kFKRbJIhuydXLRHKaRHbsL0JivHd"));
+        m3.setBannerUrl(DRIVEURL.concat("1soMVATS7dBpcTo-qchNqeFl3lUnYrWgh"));
 
         Manga m4 = new Manga();
         Manga m5 = new Manga();
@@ -64,6 +67,7 @@ public class InitialApp extends Application {
         m4.setCoverUrl(DRIVEURL.concat("19M4Ay3nYH6QSLX_mVesAsAzA2I58yv-U"));
         m4.setBannerUrl(DRIVEURL.concat("1bb1M978jY6FLcc6uw2zKvKjY0sfn9_qB"));
         m4.setChaptersJsonLink(DRIVEURL.concat("1XKK9aZkFOrWIxnmtsNxvbI_OOs7N8ec-"));
+
         m5.setTitle("Kagurabachi");
         m5.setAuthor("Takeru Hokazono");
         m5.setSynopsis(getString(R.string.kagurabachi_synopsis));
@@ -83,6 +87,7 @@ public class InitialApp extends Application {
         m6.setCategory("UPDATING");
         m6.setIsReading(0);
         m6.setCoverUrl(DRIVEURL.concat("1GX_s5BOhYpKUcq2O3G-wqfwSBenIzmC-"));
+        m6.setBannerUrl(DRIVEURL.concat("1lFf2TqH2GSb2f977w4AhLOe_YXbi6DxE"));
 
         m7.setTitle("Spy X Family");
         m7.setAuthor("Tatsuya Endo");
@@ -91,6 +96,7 @@ public class InitialApp extends Application {
         m7.setCategory("UPDATING");
         m7.setIsReading(0);
         m7.setCoverUrl(DRIVEURL.concat("1ytlJcSWPJ9k4hJjYf6jvN016HY43Q68K"));
+        m7.setBannerUrl(DRIVEURL.concat("1eLfJQnq_R50-Xcao-98ZEuRyrP7E1hvt"));
 
         database.mangaDAO().insertAll(List.of(m1, m2, m3, m4, m5, m6, m7));
     }

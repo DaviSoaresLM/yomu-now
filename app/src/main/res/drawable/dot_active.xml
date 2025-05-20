@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Barra vertical -->
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="4dp" android:height="24dp"/>
+            <solid android:color="#F48FB1" />
+            <corners android:radius="2dp"/>
+        </shape>
+    </item>
+    <!-- Cabeça (círculo no final) -->
+    <item android:right="0dp" android:bottom="0dp" android:gravity="end|center_vertical">
+        <shape android:shape="oval">
+            <size android:width="16dp" android:height="16dp"/>
+            <solid android:color="#F48FB1"/>
+        </shape>
+    </item>
+</layer-list>

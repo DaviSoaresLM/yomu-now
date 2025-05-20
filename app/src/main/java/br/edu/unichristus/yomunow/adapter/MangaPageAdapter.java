@@ -52,15 +52,14 @@ public class MangaPageAdapter extends RecyclerView.Adapter<MangaPageAdapter.Page
                     public boolean onLoadFailed(@Nullable GlideException e, Object model,
                                                 Target<Drawable> target, boolean isFirstResource) {
                         holder.pageProgressBar.setVisibility(View.GONE);
-                        // opcional: mostra algo em caso de erro
-                        return false; // permite que o Glide trate o erro visual
+                        return false;
                     }
 
                     @Override
                     public boolean onResourceReady(Drawable resource, Object model,
                                                    Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
                         holder.pageProgressBar.setVisibility(View.GONE);
-                        return false; // Glide pode continuar com o set da imagem
+                        return false;
                     }
                 })
                 .into(holder.imageView);

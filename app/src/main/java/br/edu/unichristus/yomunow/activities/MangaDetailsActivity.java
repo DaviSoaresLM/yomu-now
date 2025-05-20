@@ -3,7 +3,9 @@ package br.edu.unichristus.yomunow.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,19 +21,23 @@ import br.edu.unichristus.yomunow.manga.Manga;
 public class MangaDetailsActivity extends AppCompatActivity {
     private TextView tvTitle, tvAuthor, tvDescription;
     private ImageView ivCover, ivBanner;
-    private Button buttonRead;
+    private LinearLayout buttonRead;
+    private ImageButton btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.manga_details_layout);
+        setContentView(R.layout.activity_manga_details);
 
-        tvTitle = findViewById(R.id.tvMangaTitle);
-        tvAuthor = findViewById(R.id.tvAuthor);
-        tvDescription = findViewById(R.id.tvDescription);
-        ivCover = findViewById(R.id.ivCover);
-        ivBanner = findViewById(R.id.bannerImage);
-        buttonRead = findViewById(R.id.btnContinueReading);
+        tvTitle = findViewById(R.id.manga_title);
+        tvAuthor = findViewById(R.id.manga_author);
+        tvDescription = findViewById(R.id.manga_description);
+        ivCover = findViewById(R.id.manga_cover);
+        ivBanner = findViewById(R.id.cover_background);
+        buttonRead = findViewById(R.id.btn_read);
+
+        btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(v -> finish());
 
         int mangaId = getIntent().getIntExtra("manga_id", -1);
 
