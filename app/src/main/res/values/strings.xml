@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <string name="app_name">Yomu Now</string>
+    <string name="app_name">YoMuNow</string>
     <string name="bt_read">Iniciar Leitura</string>
     <string name="bt_continue">Continuar</string>
     <string name="manga_details">Detalhes do Mangá</string>
@@ -10,7 +10,7 @@
     <string name="continue_reading">Continuar Lendo</string>
     <string name="next_chapter">Próximo Capítulo</string>
     <string name="data_chapter">quarta-feira, 28 de maio</string>
-    <string name="dandadan_cap_name">Capítulo 170 - Uma Mulher Suspeita</string>
+    <string name="dandadan_cap_name">Nome do Capítulo</string>
     <string name="popular">Populares</string>
     <string name="lb_continue_lendo">Continue Lendo</string>
     <string name="mostrar_tudo">Mostrar Tudo</string>

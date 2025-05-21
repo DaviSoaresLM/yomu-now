@@ -2,7 +2,7 @@
 
 
 <resources>
-    <string name="app_name">Yomu Now</string>
+    <string name="app_name">YoMuNow</string>
     <string name="bt_read">Start Reading</string>
     <string name="bt_continue">Continue</string>
     <string name="manga_details">Manga Details</string>
@@ -11,7 +11,7 @@
     <string name="continue_reading">Continue Reading</string>
     <string name="next_chapter">Next Chapter</string>
     <string name="data_chapter">Wednesday, May 28</string>
-    <string name="dandadan_cap_name">Chapter 170 - A Suspicious Woman</string>
+    <string name="dandadan_cap_name">Chapter Name</string>
     <string name="popular">Popular</string>
     <string name="lb_continue_lendo">Continue Reading</string>
     <string name="mostrar_tudo">Show All</string>

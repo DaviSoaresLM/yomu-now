@@ -76,6 +76,7 @@ public class InitialApp extends Application {
         m5.setIsReading(1);
         m5.setCoverUrl(DRIVEURL.concat("1lG7bcRFA-1ZhAAAqH2xmYa750BwGHfi1"));
         m5.setBannerUrl(DRIVEURL.concat("1PrG1xKtnrTeMIriKqwVDn4j6bM4zc4AC"));
+        m5.setChaptersJsonLink(DRIVEURL.concat("1qlMpNYs9W2h5fbdZx6Y8FHti9NBT1lMo"));
 
         Manga m6 = new Manga();
         Manga m7 = new Manga();
